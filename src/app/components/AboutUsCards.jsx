@@ -28,7 +28,7 @@ const AboutCard = ({
             <img
                 src={image}
                 alt={titleTopRight || titleTopLeft}
-                className="absolute inset-0 h-full w-full object-cover object-right"
+                className="absolute inset-0 h-full w-full object-cover"
             />
 
             {/* Corner text (Roman + Titles) */}

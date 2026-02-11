@@ -227,7 +227,7 @@ export default function Carousel({
                     {item.title}
                   </h3>
 
-                  <p className="text-white/70 text-md lg:text-[20px] font-light" style={{ fontFamily: 'var(--font-sora), sans-serif' }}>
+                  <p className="text-white/70 text-md lg:text-[16px] font-light" style={{ fontFamily: 'var(--font-sora), sans-serif' }}>
                     {item.description}
                   </p>
 
@@ -238,7 +238,7 @@ export default function Carousel({
                         <div className="text-5xl md:text-7xl text-white" style={{ fontFamily: 'var(--font-sora), sans-serif' }}>
                           {stat.value}
                         </div>
-                        <p className="text-white/60 text-sm md:text-[16px]" style={{ fontFamily: 'var(--font-sora), sans-serif' }}>
+                        <p className="text-white/60 text-sm md:text-[14px]" style={{ fontFamily: 'var(--font-sora), sans-serif' }}>
                           {stat.label}
                         </p>
                       </div>
@@ -248,7 +248,8 @@ export default function Carousel({
 
                 {/* Bottom Section - Laptop Image & Badge */}
                 <div className="col-span-1 flex flex-col justify-between">
-                  <div className="hidden md:flex items-start justify-end gap-2 text-white/70 text-md font-inter">
+                  <div className="hidden md:flex items-start justify-end gap-2 text-white/70 text-md font-inter
+                  absolute right-10">
                     <div className="text-right flex">
                       <p className="text-white">PASSION<span className="text-white/50">{" "} IN <br /> {item.badge?.split(' ')[2] || 'BUSINESS'}</span></p>
                     </div>

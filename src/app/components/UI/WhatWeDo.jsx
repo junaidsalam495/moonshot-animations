@@ -201,7 +201,7 @@ const WhatWeDo = () => {
                   className="absolute inset-0 pointer-events-none"
                   style={{
                     background:
-                      "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%)",
+                      "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%)",
                   }}
                 />
               </div>
