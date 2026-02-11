@@ -8,6 +8,12 @@ import { AuroraText } from "@/components/ui/aurora-text";
 import TextScrollMarquee from "@/components/lightswind/text-scroll-marquee";
 import { ChevronDown } from "lucide-react";
 
+const Slash = () => (
+  <span className="inline-block mx-3 align-middle">
+    <span className="simple-slash"></span>
+  </span>
+)
+
 const socials = [
   {
     key: "facebook",
@@ -74,18 +80,18 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative flex items-center justify-center pt-30 overflow-visible">
         {/* Decorative Labels */}
-        <div className="hidden log:block absolute lg:top-[25%] 1280:top-[20%] left-20">
+        <div className=" log:block absolute lg:top-[25%] 1280:top-[28%] left-20">
           <p
             style={{ fontFamily: "var(--font-poppins), sans-serif" }}
-            className="text-lg font-normal text-[#FFFFFF99]"
+            className="text-md font-normal text-[#FFFFFF99]"
           >
             (creative)
           </p>
         </div>
-        <div className="hidden log:block absolute lg:top-[25%] 1280:top-[20%] right-20">
+        <div className=" log:block absolute lg:top-[25%] 1280:top-[28%] right-20">
           <p
             style={{ fontFamily: "var(--font-poppins), sans-serif" }}
-            className="text-lg font-normal text-[#FFFFFF99]"
+            className="text-md font-normal text-[#FFFFFF99]"
           >
             (agency)
           </p>
@@ -93,7 +99,7 @@ const Hero = () => {
 
         {/* Main Content Container */}
         <div
-          className="mt-25 z-10 w-full flex flex-col items-center max-sm:items-start max-w-[73%] overflow-visible"
+          className="mt-20 z-10 w-full flex flex-col items-center max-sm:items-start max-w-[73%] overflow-visible"
           style={{
             mixBlendMode: "screen",
           }}
@@ -101,7 +107,7 @@ const Hero = () => {
           <div className="w-full relative">
             {/* Decorative Lines */}
             <div className="max-sm:hidden block">
-              {["-5%", "15%", "35%", "60%", "85%", "105%"].map((left) => (
+              {["5%", "27%", "47%", "68.5%", "91.5%"].map((left) => (
                 <div
                   key={left}
                   style={{ left }}
@@ -129,7 +135,7 @@ const Hero = () => {
                 </h1>
               </div>
 
-              <div className="ml-[104%] text-end max-lg:text-center">
+              <div className="ml-[107%] text-end max-lg:text-center">
                 <h1
                   className="text-[clamp(60px,11.5vw,215px)] flex justify-end"
                   style={{ fontFamily: "var(--font-sora), sans-serif" }}
@@ -142,7 +148,7 @@ const Hero = () => {
           </div>
 
           {/* Video Container - Center (overflow visible) */}
-          <div className="-mt-125 max-2xl:-mt-100 max-1280:-mt-70 max-lg:-mt-50 relative w-[70%] max-sm:w-full overflow-visible">
+          <div className="-mt-125 max-2xl:-mt-100 max-1280:-mt-70 max-lg:-mt-150 relative w-[70%] max-sm:w-full overflow-visible">
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div
                 className="w-150 h-150 rounded-full blur-[100px]"
@@ -172,29 +178,29 @@ const Hero = () => {
         <div className="max-lg:hidden block absolute right-24 top-[70%] 1920:top-[65%] text-right z-50">
           <p
             style={{ fontFamily: "var(--font-sora), sans-serif" }}
-            className="text-gray-600 text-base 1280:text-lg 1440:text-xl 1600:text-2xl leading-relaxed transition-colors duration-300"
+            className="text-gray-600 text-base 1280:text-lg 1440:text-xl 1600:text-2xl leading-relaxed"
           >
             <span
               onClick={() => scrollToSection("branding")}
-              className="text-gray-600 hover:text-white hover:underline cursor-pointer"
+              className="hover:text-white hover:underline cursor-pointer"
             >
               Branding
             </span>{" "}
-            /{" "}
+            <Slash />
             <span
               onClick={() => scrollToSection("mobile-applications")}
               className="hover:underline text-gray-600 hover:text-white cursor-pointer"
             >
               Mobile Apps
             </span>
-            <br />/{" "}
+            <br /><Slash />
             <span
               onClick={() => scrollToSection("animations")}
               className="text-gray-600 hover:text-white hover:underline cursor-pointer"
             >
               Graphic
             </span>{" "}
-            /{" "}
+            <Slash />
             <span
               onClick={() => scrollToSection("ui-ux")}
               className="hover:underline text-gray-600 hover:text-white cursor-pointer"
@@ -233,7 +239,7 @@ const Hero = () => {
               className={`
                             group relative w-12 h-12 rounded-full
                             flex items-center justify-center text-xs font-medium
-                            bg-gray-800/80 backdrop-blur
+                            bg-[#1b2c3b] backdrop-blur
                             text-white transition-colors duration-300
                             focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40
                             overflow-hidden
@@ -296,7 +302,7 @@ const Hero = () => {
           <TextScrollMarquee
             baseVelocity={3}
             direction="left"
-            className="text-[clamp(200px,12vw,350px)] font-medium tracking-tighter text-white/20 select-none pointer-events-none"
+            className="text-[clamp(200px,12vw,350px)] font-medium tracking-tighter text-white/30 select-none pointer-events-none"
             scrollDependent={false}
             delay={500}
           >

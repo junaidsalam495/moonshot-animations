@@ -63,7 +63,7 @@ const AboutUs = () => {
       <div className="mx-auto max-w-[90%] px-6 pt-16 1600:pt-24 pb-20 1280:pb-30 1366:pb-40 1600:pb-56">
         <div className="pb-10 1366:pb-16 1600:pb-24 lg:flex lg:items-start">
           {/* Small "About Us" label */}
-          <div className="lg:mr-40 1366:mr-50 1600:mr-60 flex items-center gap-3 text-sm 1366:text-base 1440:text-lg 1600:text-xl">
+          <div className="lg:mr-30 1366:mr-40 1600:mr-50 flex items-center gap-3 text-sm 1366:text-base 1440:text-lg 1600:text-xl">
             <img src="/images/about-us/icon.png" />
             <p className="font-poppins font-normal text-nowrap">
               About Us
@@ -73,7 +73,7 @@ const AboutUs = () => {
           <div>
             <h2
               id="about-us-index-scroll-reveal"
-              className="tracking-[-0.03em] font-normal"
+              className="tracking-[-0.05em] font-normal -mt-5"
               style={{ fontFamily: "var(--font-poppins), sans-serif" }}
             >
               <ScrollReveal enableBlur={false}>
@@ -109,7 +109,7 @@ const AboutUs = () => {
               />
             </h2>
             <div className="1440:mt-8">
-              <Button text="Learn More" href="/about-us" />
+              <Button text="Learn More About" href="/about-us" />
             </div>
           </div>
         </div>

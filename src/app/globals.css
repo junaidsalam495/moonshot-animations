@@ -253,3 +253,11 @@ shark-icon-container {
   -webkit-text-fill-color: transparent;
   animation: shine 3s linear infinite;
 }
+
+.simple-slash {
+  display: block;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(255, 255, 255, 0.35);
+  transform: rotate(22deg);
+}

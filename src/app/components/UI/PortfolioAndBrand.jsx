@@ -423,9 +423,9 @@ const PortfolioAndBrand = () => {
                     <ScrollFillText>BRAND</ScrollFillText>
                     <div className='hidden lg:block'>
                         <ScrollFillText>
-                            SHI
-                            <ExpandableSpan>NNNN</ExpandableSpan>
-                            E!
+                            SH
+                            <ExpandableSpan>IIIIIIIIII</ExpandableSpan>
+                            NE!
                         </ScrollFillText>
                     </div>
                     <div className='block lg:hidden'>
