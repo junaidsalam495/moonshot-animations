@@ -75,7 +75,7 @@ const About2 = () => {
           {/* Cards Section with Background */}
           <div className="relative">
             {/* Background Image - Behind cards only */}
-            <div className="sticky top-0 z-0 flex h-screen items-center justify-center pointer-events-none will-change-transform">
+            <div className="sticky top-0  z-0 flex h-screen items-center justify-center pointer-events-none will-change-transform">
               <img
                 src="/images/about-2/about-2-bg.png"
                 alt=""
@@ -90,7 +90,7 @@ const About2 = () => {
                 <ParallaxCard
                   offset={-150}
                   className={[
-                    "relative rounded-[28px] border border-[#2e2e2e]/60 bg-[#030303] overflow-hidden",
+                    "relative rounded-[18px] border border-[#2e2e2e]/60 bg-[#030303] overflow-hidden",
                     "shadow-[0_30px_120px_rgba(0,0,0,0.75)]",
                     "px-4 py-6 min-w-[42%] max-w-[42%] max-1280:max-w-[45%] max-1280:min-w-[45%] max-md:max-w-4/5 max-md:min-w-4/5",
                   ].join(" ")}
@@ -106,7 +106,7 @@ const About2 = () => {
 
                   {/* Gradient - Bottom Left */}
                   <div
-                    className="absolute -left-32 -bottom-32 w-60 h-90 rounded-full blur-[30px] opacity-60 pointer-events-none"
+                    className="absolute -left-32 -bottom-32 w-50 h-90 rounded-full blur-[30px] opacity-60 pointer-events-none"
                     style={{
                       background:
                         "linear-gradient(149.85deg, rgba(255, 198, 40, 0.8) 39.93%, rgba(250, 40, 137, 0.8) 60.8%, rgba(62, 95, 249, 0.8) 91.46%)",
@@ -151,14 +151,21 @@ const About2 = () => {
               <div className="relative mb-10 md:-mb-30 max-md:flex max-md:justify-center">
                 <ParallaxCard
                   className={[
-                    "relative rounded-[28px] border border-[#2e2e2e]/60 bg-[#030303] overflow-hidden",
+                    "relative rounded-[18px] border border-[#2e2e2e]/60 bg-[#030303] overflow-hidden",
                     "shadow-[0_30px_120px_rgba(0,0,0,0.75)]",
                     "px-4 py-6 min-w-[42%] max-w-[42%] max-1280:max-w-[45%] max-1280:min-w-[45%] max-md:max-w-4/5 max-md:min-w-4/5",
                   ].join(" ")}
                 >
                   {/* Gradient - Top Right */}
-                  <div
-                    className="absolute top-16 -right-2 w-40 h-52 rounded-full blur-[75px] pointer-events-none"
+                  {/* <div
+                    className="absolute top-16 -right-2 w-36 h-60 rounded-full blur-[30px] opacity-60 pointer-events-none"
+                    style={{
+                      background:
+                        "linear-gradient(2deg, rgba(255, 198, 40, 0.80) 39.93%, rgba(250, 40, 137, 0.80) 60.8%, rgba(62, 95, 249, 0.80) 91.46%)",
+                    }}
+                  /> */}
+                 <div
+                    className="absolute top-16 -right-2 w-48 h-52 rounded-full blur-[30px] opacity-60 pointer-events-none"
                     style={{
                       background:
                         "linear-gradient(50deg, rgba(255, 198, 40, 0.80) 39.93%, rgba(250, 40, 137, 0.80) 60.8%, rgba(62, 95, 249, 0.80) 91.46%)",
@@ -167,10 +174,10 @@ const About2 = () => {
 
                   {/* Gradient - Bottom Left */}
                   <div
-                    className="absolute -left-32 -bottom-32 w-60 h-90 rounded-full blur-[75px] pointer-events-none"
+                    className="absolute -left-32 -bottom-32 w-48 h-60 rounded-full blur-[45px] pointer-events-none"
                     style={{
                       background:
-                        "linear-gradient(180deg, #03499F 0.07%, #D722AF 99.93%)",
+                        "linear-gradient(180deg, #D722AF  39.07%, #03499F 6.93%)",
                     }}
                   />
 
@@ -192,7 +199,7 @@ const About2 = () => {
 
                   {/* Headline */}
                   <div
-                    className="lg:w-[95%] 1440:w-[90%] 1600:w-[95%] relative z-10 text-xl lg:text-[clamp(22px,1.85vw,36px)] uppercase leading-tight tracking-[0.01em] text-white"
+                    className="lg:w-[90%] 1440:w-[90%] 1600:w-[95%] relative z-10 text-xl lg:text-[clamp(22px,1.85vw,36px)] uppercase leading-tight tracking-[0.01em] text-white"
                     style={{ fontFamily: "var(--font-sora), sans-serif" }}
                   >
                     <TextType
@@ -207,10 +214,10 @@ const About2 = () => {
               </div>
 
               {/* Card 03 */}
-              <div className="relative flex justify-center md:justify-end mb-10 -mt-72 max-sm:mt-0">
+              <div className="relative flex justify-center md:justify-end mb-10 -mt-62 max-sm:mt-0">
                 <ParallaxCard
                   className={[
-                    "relative rounded-[28px] border border-[#2e2e2e]/60 bg-[#030303] overflow-hidden",
+                    "relative rounded-[18px] border border-[#2e2e2e]/60 bg-[#030303] overflow-hidden",
                     "shadow-[0_30px_120px_rgba(0,0,0,0.75)]",
                     "px-4 py-6 min-w-[42%] max-w-[42%] max-1280:max-w-[45%] max-1280:min-w-[45%] max-md:max-w-4/5 max-md:min-w-4/5",
                   ].join(" ")}
@@ -225,8 +232,8 @@ const About2 = () => {
                   />
 
                   {/* Gradient - Bottom Left */}
-                  <div
-                    className="absolute -left-32 -bottom-32 w-60 h-90 rounded-full blur-[30px] opacity-60 pointer-events-none"
+                <div
+                    className="absolute -left-32 -bottom-32 w-50 h-100 rounded-full blur-[50px] opacity-60 pointer-events-none"
                     style={{
                       background:
                         "linear-gradient(149.85deg, rgba(255, 198, 40, 0.8) 39.93%, rgba(250, 40, 137, 0.8) 60.8%, rgba(62, 95, 249, 0.8) 91.46%)",
@@ -251,7 +258,7 @@ const About2 = () => {
 
                   {/* Headline */}
                   <div
-                    className="lg:max-w-[90%] relative z-10 text-xl lg:text-[clamp(22px,1.85vw,36px)] uppercase leading-tight tracking-[0.01em] text-white"
+                    className="lg:max-w-[88%] relative z-10 text-xl lg:text-[clamp(22px,1.85vw,36px)] uppercase leading-tight tracking-[0.01em] text-white"
                     style={{ fontFamily: "var(--font-sora), sans-serif" }}
                   >
                     <TextType
@@ -268,29 +275,30 @@ const About2 = () => {
               </div>
 
               {/* Card 04 */}
-              <div className="relative max-md:flex max-md:justify-center md:left-20">
+              <div className="relative max-md:flex max-md:justify-center -mt-36 md:left-20">
                 <ParallaxCard
                   className={[
-                    "relative rounded-[28px] border border-[#2e2e2e]/60 bg-[#030303] overflow-hidden -mt-30 max-sm:mt-0",
+                    "relative rounded-[18px] border border-[#2e2e2e]/60 bg-[#030303] overflow-hidden -mt-30 max-sm:mt-0",
                     "shadow-[0_30px_120px_rgba(0,0,0,0.75)]",
                     "px-4 py-6 min-w-[42%] max-w-[42%] max-1280:max-w-[45%] max-1280:min-w-[45%] max-md:max-w-4/5 max-md:min-w-4/5",
                   ].join(" ")}
                 >
                   {/* Gradient - Top Right */}
                   <div
-                    className="absolute top-16 -right-2 w-50 h-70 rounded-full blur-[75px] pointer-events-none"
+                    className="absolute top-16 -right-2 w-48 h-52 rounded-full blur-[30px] opacity-60 pointer-events-none"
                     style={{
                       background:
-                        "linear-gradient(rgba(255, 198, 40, 0.80) 39.93%, rgba(250, 40, 137, 0.80) 60.8%, rgba(62, 95, 249, 0.80) 91.46%)",
+                        "linear-gradient(50deg, rgba(255, 198, 40, 0.80) 39.93%, rgba(250, 40, 137, 0.80) 60.8%, rgba(62, 95, 249, 0.80) 91.46%)",
                     }}
                   />
+                 
 
                   {/* Gradient - Bottom Left */}
                   <div
-                    className="absolute -left-32 -bottom-32 w-60 h-90 rounded-full blur-[75px] pointer-events-none"
+                    className="absolute -left-32 -bottom-32 w-50 h-60 rounded-full blur-[75px] pointer-events-none"
                     style={{
                       background:
-                        "linear-gradient(180deg, #03499F 0.07%, #D722AF 99.93%)",
+                        "linear-gradient(180deg, #D722AF  39.07%, #03499F 6.93%)",
                     }}
                   />
 

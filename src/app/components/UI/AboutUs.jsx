@@ -119,7 +119,7 @@ const AboutUs = () => {
       <div className="relative">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div
-            className="w-[95%] h-[150px] rounded-t-full blur-[80px] bg-center bg-cover"
+            className="w-[90%] h-[40px] rounded-t-full blur-[80px] bg-center bg-cover"
             style={{
               backgroundImage: `url('/images/about-us/image.png')`,
             }}
