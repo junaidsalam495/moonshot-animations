@@ -100,7 +100,7 @@ export default function AboutUsPage() {
     const carouselRef = useRef(null);
     const contentRef = useRef(null);
 
-    useGSAP(() => {}, { scope: carouselRef });
+    useGSAP(() => { }, { scope: carouselRef });
 
     useLayoutEffect(() => {
       const carouselEl = carouselRef.current;

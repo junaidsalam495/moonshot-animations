@@ -227,7 +227,7 @@ export default function Carousel({
                     {item.title}
                   </h3>
 
-                  <p className="text-white/70 text-md lg:text-[16px] font-light" style={{ fontFamily: 'var(--font-sora), sans-serif' }}>
+                  <p className="text-white/70 text-md lg:text-[22px] max-w-lg font-light" style={{ fontFamily: 'var(--font-sora), sans-serif' }}>
                     {item.description}
                   </p>
 
@@ -238,7 +238,7 @@ export default function Carousel({
                         <div className="text-5xl md:text-7xl text-white" style={{ fontFamily: 'var(--font-sora), sans-serif' }}>
                           {stat.value}
                         </div>
-                        <p className="text-white/60 text-sm md:text-[14px]" style={{ fontFamily: 'var(--font-sora), sans-serif' }}>
+                        <p className="text-white/60 text-sm md:text-lg" style={{ fontFamily: 'var(--font-sora), sans-serif' }}>
                           {stat.label}
                         </p>
                       </div>
