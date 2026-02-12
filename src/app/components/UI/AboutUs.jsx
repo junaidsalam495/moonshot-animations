@@ -125,10 +125,9 @@ const AboutUs = () => {
             }}
           />
         </div> */}
-      <div className="relative">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div
-            className="w-[95%] h-37.5 rounded-t-full blur-[80px] in-out"
+            className="w-[80%] h-30 rounded-t-full blur-[80px] in-out"
             style={{
               background:
                 "linear-gradient(119deg, rgba(57, 40, 255, 0.80) 14.54%, rgba(250, 40, 242, 0.80) 41.09%, rgba(35, 141, 250, 0.80) 55.83%, rgba(62, 95, 249, 0.80) 80.08%), linear-gradient(119deg, rgba(255, 198, 40, 0.80) 14.54%, rgba(250, 40, 137, 0.80) 41.09%, rgba(35, 141, 250, 0.80) 55.83%, rgba(62, 95, 249, 0.80) 80.08%)",
@@ -136,7 +135,6 @@ const AboutUs = () => {
             }}
           />
         </div>
-      </div>
       </div>
     </section>
   );
