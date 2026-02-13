@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useEffect, useState, useRef } from "react";
@@ -293,11 +294,10 @@ export default function FormCTA() {
                             key={t}
                             type="button"
                             onClick={() => toggleTag(t)}
-                            className={`max-sm:w-full py-4 px-3 1920:px-8 1600:px-6 1280:px-5 lg:px-3 max-xl:py-3 rounded-full bg-[#000911] text-[11px] 1920:text-[13px] 1600:text-[12px] 1440:text-[11px] 1280:text-[10px] lg:text-[9px] transition-colors duration-200 border ${
-                              isSelected
-                                ? "border-white/80 text-white/80"
-                                : "border-[#18354D] text-[#999999]"
-                            } hover:border-white/80 hover:text-white/80 cursor-pointer`}
+                            className={`max-sm:w-full py-4 px-3 1920:px-8 1600:px-6 1280:px-5 lg:px-3 max-xl:py-3 rounded-full bg-[#000911] text-[11px] 1920:text-[13px] 1600:text-[12px] 1440:text-[11px] 1280:text-[10px] lg:text-[9px] transition-colors duration-200 border ${isSelected
+                              ? "border-white/80 text-white/80"
+                              : "border-[#18354D] text-[#999999]"
+                              } hover:border-white/80 hover:text-white/80 cursor-pointer`}
                           >
                             {t}
                           </button>
@@ -307,7 +307,7 @@ export default function FormCTA() {
                   ),
                 )}
               </div>
-              
+
               <div className="block lg:hidden">
                 <div className="w-full grid grid-cols-2 md:grid-cols-3 flex-wrap gap-3">
                   {tags.map((t) => {
@@ -317,11 +317,10 @@ export default function FormCTA() {
                         key={t}
                         type="button"
                         onClick={() => toggleTag(t)}
-                        className={`max-sm:w-full py-4 px-3 1920:px-8 1600:px-6 1280:px-5 lg:px-3 max-xl:py-3 rounded-full bg-[#000911] text-[11px] 1920:text-[13px] 1600:text-[12px] 1440:text-[11px] 1280:text-[10px] lg:text-[9px] transition-colors duration-200 border ${
-                          isSelected
-                            ? "border-white/80 text-white/80"
-                            : "border-[#18354D] text-[#999999]"
-                        } hover:border-white/80 hover:text-white/80 cursor-pointer`}
+                        className={`max-sm:w-full py-4 px-3 1920:px-8 1600:px-6 1280:px-5 lg:px-3 max-xl:py-3 rounded-full bg-[#000911] text-[11px] 1920:text-[13px] 1600:text-[12px] 1440:text-[11px] 1280:text-[10px] lg:text-[9px] transition-colors duration-200 border ${isSelected
+                          ? "border-white/80 text-white/80"
+                          : "border-[#18354D] text-[#999999]"
+                          } hover:border-white/80 hover:text-white/80 cursor-pointer`}
                       >
                         {t}
                       </button>

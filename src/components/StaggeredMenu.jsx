@@ -471,7 +471,8 @@ export const StaggeredMenu = ({
           <div className="flex justify-center items-center gap-6 ">
             <button
               ref={toggleBtnRef}
-              className="sm-toggle relative z-20 inline-flex items-center gap-4 border border-white/20 rounded-full cursor-pointer text-white font-medium leading-none overflow-visible pointer-events-auto hover:border-white/40 transition-all duration-300 backdrop-blur-sm  bg-[#041426] pr-5 pl-1 py-1.5 "
+              className="sm-toggle relative z-20 inline-flex items-center gap-4 border border-white/20 rounded-full cursor-pointer text-white font-medium leading-none overflow-visible pointer-events-auto hover:border-white/40 transition-all duration-300 backdrop-blur-sm  bg-[#041426] pr-5 pl-1 py-1.5 
+              "
               style={{
                 color: "white",
                 fontFamily: "var(--font-sora), sans-serif",

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React from 'react';
@@ -35,18 +36,20 @@ const AboutCard = ({
             <div className="absolute left-8 top-4 text-white/80 text-[clamp(12px,4vw,20px)] select-none">
                 {roman}
             </div>
+
+            <div className="absolute left-8 bottom-4 flex items-end justify-between">
+                <div className="font-urbanist text-white tracking-tighter text-[clamp(40px,4vw,80px)] drop-shadow-[0_2px_20px_rgba(0,0,0,0.6)]">
+                    {number}
+                </div>
+            </div>
+
             <div className="font-urbanist leading-10 absolute right-8 top-4 text-right text-white/85 text-[clamp(14px,2vw,26px)]"
             >
                 {titleTopLeft && <div>{titleTopLeft}</div>}
                 {titleTopRight && <div>{titleTopRight}</div>}
             </div>
 
-            {/* Bottom row: metric + arrow */}
-            <div className="absolute bottom-2 left-4 right-4 flex items-end justify-between">
-                <div className="font-urbanist text-white tracking-tighter text-[clamp(40px,4vw,80px)] drop-shadow-[0_2px_20px_rgba(0,0,0,0.6)]">
-                    {number}
-                </div>
-
+            <div className="absolute right-5 bottom-4 flex items-end justify-between">
                 <GoArrowUpRight className="w-10 h-14 1280:w-14 1280:h-18 1600:w-20 1600:h-24" />
             </div>
         </div>

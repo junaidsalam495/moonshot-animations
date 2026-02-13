@@ -126,7 +126,7 @@ export const AnimatedTestimonials = ({
             >
               <div className="text-sm 1366:text-base 1440:text-lg 1600:text-xl text-[#808080] mb-6">
                 <span className="text-nowrap font-sora font-normal">
-                  09 — Testimonials
+                  09 <span className="-mr-2">—</span> — Testimonials
                 </span>
               </div>
               <motion.h2 className={quoteClass}>

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import React from "react";
@@ -7,12 +8,6 @@ import Navbar from "../Navbar";
 import { AuroraText } from "@/components/ui/aurora-text";
 import TextScrollMarquee from "@/components/lightswind/text-scroll-marquee";
 import { ChevronDown } from "lucide-react";
-
-const Slash = () => (
-  <span className="inline-block mx-3 align-middle">
-    <span className="simple-slash"></span>
-  </span>
-)
 
 const socials = [
   {
@@ -80,7 +75,7 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative flex items-center justify-center pt-30 overflow-visible">
         {/* Decorative Labels */}
-        <div className=" log:block absolute lg:top-[25%] 1280:top-[28%] left-20">
+        <div className=" log:block absolute lg:top-[25%] 1280:top-[25%] left-20">
           <p
             style={{ fontFamily: "var(--font-poppins), sans-serif" }}
             className="text-md font-normal text-[#FFFFFF99]"
@@ -88,7 +83,7 @@ const Hero = () => {
             (creative)
           </p>
         </div>
-        <div className=" log:block absolute lg:top-[25%] 1280:top-[28%] right-20">
+        <div className=" log:block absolute lg:top-[25%] 1280:top-[25%] right-20">
           <p
             style={{ fontFamily: "var(--font-poppins), sans-serif" }}
             className="text-md font-normal text-[#FFFFFF99]"
@@ -131,7 +126,7 @@ const Hero = () => {
                   className="text-[clamp(80px,11.5vw,235px)] italic"
                   style={{ fontFamily: "var(--font-playfair), serif" }}
                 >
-                  Digital
+                  Digit<AuroraText colors={["#ffffff", "#d1bd73"]}>al</AuroraText>
                 </h1>
               </div>
 
@@ -184,23 +179,21 @@ const Hero = () => {
               onClick={() => scrollToSection("branding")}
               className="hover:text-white hover:underline cursor-pointer"
             >
-              Branding
+              Branding /
             </span>{" "}
-            <Slash />
             <span
               onClick={() => scrollToSection("mobile-applications")}
               className="hover:underline text-gray-600 hover:text-white cursor-pointer"
             >
               Mobile Apps
             </span>
-            <br /><Slash />
+            <br />
             <span
               onClick={() => scrollToSection("animations")}
               className="text-gray-600 hover:text-white hover:underline cursor-pointer"
             >
-              Graphic
+              / Graphic /
             </span>{" "}
-            <Slash />
             <span
               onClick={() => scrollToSection("ui-ux")}
               className="hover:underline text-gray-600 hover:text-white cursor-pointer"
@@ -213,9 +206,8 @@ const Hero = () => {
 
       {/* Social Media Icons - Left Side */}
       <div
-        className={`max-lg:hidden absolute left-16 max-lg:left-6 pl-3 top-[45%] flex flex-col gap-5 transition-all duration-300 ${
-          isMenuOpen ? "z-0" : "z-0"
-        }`}
+        className={`max-lg:hidden absolute left-16 max-lg:left-6 pl-3 top-[45%] flex flex-col gap-5 transition-all duration-300 ${isMenuOpen ? "z-0" : "z-0"
+          }`}
       >
         {socials.map((s) => (
           <div
@@ -259,11 +251,10 @@ const Hero = () => {
               />
               {/* Glyph */}
               <span
-                className={`relative text-[16px] z-10 transition-colors duration-300 ${
-                  s.key === "x"
-                    ? "group-hover:text-black"
-                    : "group-hover:text-white"
-                }`}
+                className={`relative text-[16px] z-10 transition-colors duration-300 ${s.key === "x"
+                  ? "group-hover:text-black"
+                  : "group-hover:text-white"
+                  }`}
               >
                 {s.char}
               </span>

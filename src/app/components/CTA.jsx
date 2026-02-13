@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { GoArrowUpRight } from "react-icons/go";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 export default function CTA() {
   const smokeRef = useRef(null);
@@ -127,9 +127,9 @@ export default function CTA() {
         <Link href="/contact-us">
           <button
             type="button"
-            className="hover:cursor-pointer mt-6 h-18 w-18 max-1440:w-16 max-1440:h-16 max-lg:w-12 max-lg:h-12 max-sm:h-12 max-sm:w-12 rounded-full bg-white text-black flex items-center justify-center shadow-lg hover:scale-105 hover:rotate-45 transition"
+            className="hover:cursor-pointer mt-6 h-18 w-18 max-1440:w-16 max-1440:h-16 max-lg:w-12 max-lg:h-12 max-sm:h-12 max-sm:w-12 rounded-full bg-white text-black flex items-center justify-center shadow-lg hover:scale-105 hover:rotate-90 transition hover:bg-[#d42290] hover:text-white rotate-45"
           >
-            <GoArrowUpRight size={24} />
+            <FaArrowUpLong size={24} />
           </button>
         </Link>
       </div>
