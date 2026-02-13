@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useRef, useLayoutEffect, useEffect } from "react";
@@ -5,11 +7,9 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { AuroraText } from "@/components/ui/aurora-text";
-import Dither from "@/components/Dither";
 import Partners from "../components/UI/Partners";
 import ScrollReveal from "@/components/lightswind/scroll-reveal";
 import TextType from "@/components/TextType";
@@ -17,7 +17,6 @@ import { CountingNumber } from "@/components/ui/shadcn-io/counting-number";
 import SlidingLogoMarquee from "@/components/lightswind/sliding-logo-marquee";
 import DecorativeLines from "../components/DecorativeLines";
 import Ribbons from "@/components/Ribbons";
-import CyberHologramLoader from "../components/CyberHologramLoader";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -100,7 +99,7 @@ export default function AboutUsPage() {
     const carouselRef = useRef(null);
     const contentRef = useRef(null);
 
-    useGSAP(() => {}, { scope: carouselRef });
+    useGSAP(() => { }, { scope: carouselRef });
 
     useLayoutEffect(() => {
       const carouselEl = carouselRef.current;

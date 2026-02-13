@@ -97,7 +97,7 @@ export default function Partners() {
             <div className="font-sora flex justify-between">
               <div className="text-sm 1366:text-base 1440:text-lg 1600:text-xl text-[#808080]">
                 <span className="text-nowrap font-sora font-normal">
-                  08 — Partners
+                  08 <span className="-mr-2">—</span> — Partners
                 </span>
               </div>
               <p className="text-[#41454a] text-end text-lg 1366:text-xl 1600:text-2xl tracking-[-0.03em]">

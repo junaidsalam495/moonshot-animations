@@ -291,7 +291,7 @@ const PortfolioAndBrand = () => {
                         {/* Row 1, Col 1: Section Label + Heading */}
                         <div className="flex flex-col justify-between space-y-6">
                             <div className='space-y-6'>
-                                <h2 className="text-[#808080] text-sm 1366:text-base 1440:text-lg 1600:text-xl font-normal font-poppins">06 — Portfolio</h2>
+                                <h2 className="text-[#808080] text-sm 1366:text-base 1440:text-lg 1600:text-xl font-normal font-poppins">06 <span className="-mr-2">—</span> — Portfolio</h2>
 
                                 <h2 className="text-4xl lg:text-5xl xl:text-7xl block font-normal" style={{ fontFamily: 'var(--font-sora), sans-serif' }}>
                                     Explore <br /> Our <span
@@ -316,7 +316,7 @@ const PortfolioAndBrand = () => {
                                 heading={<p>Branding</p>}
                                 number={<p>01.</p>}
                             >
-                                <div className="text-sm lg:text-[18px] 2xl:text-base font-poppins font-light text-white/80">
+                                <div className="text-sm lg:text-[22px] font-poppins font-light text-white/80">
                                     <p>#BuildYourBrand</p>
                                     <p>#brandwithpurpose</p>
                                 </div>
@@ -340,7 +340,7 @@ const PortfolioAndBrand = () => {
                                 heading={<p>UI/UX</p>}
                                 number={<p>02.</p>}
                             >
-                                <div className="text-sm lg:text-[18px] 2xl:text-base font-poppins font-light text-white/80">
+                                <div className="text-sm lg:text-[22px] font-poppins font-light text-white/80">
                                     <p>#Webdesign</p>
                                     <p>#Creativewebsolutions</p>
                                 </div>
@@ -356,7 +356,7 @@ const PortfolioAndBrand = () => {
                                 heading={<p>Mobile Applications</p>}
                                 number={<p>03.</p>}
                             >
-                                <div className="text-sm lg:text-[18px] 2xl:text-base font-poppins font-light text-white/80">
+                                <div className="text-sm lg:text-[22px] font-poppins font-light text-white/80">
                                     <p>#Appdesign</p>
                                     <p>#Mobileapps</p>
                                 </div>
@@ -371,7 +371,7 @@ const PortfolioAndBrand = () => {
                                 heading={<p>Animations</p>}
                                 number={<p>04.</p>}
                             >
-                                <div className="text-sm lg:text-[18px] 2xl:text-base font-poppins font-light text-white/80">
+                                <div className="text-sm lg:text-[22px] font-poppins font-light text-white/80">
                                     <p>#Creativemotion</p>
                                     <p>#Animateddesign</p>
                                 </div>
@@ -390,7 +390,7 @@ const PortfolioAndBrand = () => {
                                 heading={<p>Logo Design</p>}
                                 number={<p>05.</p>}
                             >
-                                <div className="text-sm lg:text-[18px] 2xl:text-base font-poppins font-light text-white/80">
+                                <div className="text-sm lg:text-[22px] font-poppins font-light text-white/80">
                                     <p>#Logodesign</p>
                                     <p>#Brandidentity</p>
                                 </div>
@@ -423,9 +423,7 @@ const PortfolioAndBrand = () => {
                     <ScrollFillText>BRAND</ScrollFillText>
                     <div className='hidden lg:block'>
                         <ScrollFillText>
-                            SH
-                            <ExpandableSpan>IIIIIIIIII</ExpandableSpan>
-                            NE!
+                            SHINE!
                         </ScrollFillText>
                     </div>
                     <div className='block lg:hidden'>

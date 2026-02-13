@@ -148,9 +148,7 @@ const WhatWeDo = () => {
                   <div className="flex items-center justify-between gap-4 text-white/70">
                     <div className="text-sm 1366:text-base 1440:text-lg 1600:text-xl text-[#808080]">
                       <span className="flex items-center gap-2 text-nowrap font-poppins font-normal">
-                        03
-                        <span className="w-6 h-px bg-[#808080] inline-block"></span>
-                        What We Do
+                        03 <span className="-mr-3">—</span> — What We Do
                       </span>
                     </div>
                     <div className="relative w-[92%]">
@@ -196,14 +194,14 @@ const WhatWeDo = () => {
                     style={{ backgroundImage: `url('${cat.image}')` }}
                   />
                 )}
-                <div className="absolute inset-x-0 top-0 h-[45%] pointer-events-none bg-linear-to-b from-black to-transparent" />
+                {/* <div className="absolute inset-x-0 top-0 h-[45%] pointer-events-none bg-linear-to-b from-black to-transparent" />
                 <div
                   className="absolute inset-0 pointer-events-none"
                   style={{
                     background:
                       "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%)",
                   }}
-                />
+                /> */}
               </div>
 
               {/* Text Content */}
